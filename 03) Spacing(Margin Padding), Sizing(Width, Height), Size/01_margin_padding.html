@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spacing(Margin Padding), Sizing(Width, Height), Size</title>
+      <!-- Tailwind CSS CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-20">
+  <div class="flex">
+    <div class="border-2 border-black w-[100px] h-[100px] m-[20px] p-5">1</div>
+    <div class="border-2 border-black w-[100px] h-[100px] m-[20px] p-5">2</div>
+    <div class="border-2 border-black w-[100px] h-[100px] m-[20px] p-5">3</div>
+    <div class="border-2 border-black w-[100px] h-[100px] m-[20px] p-[20px]">4</div>
+  </div>
+  <hr class="m-10">
+  <!-- 블록요소를 중앙으로 보낼 때 mx-auto를 주면 됨 -->
+  <div class="border-2 border-black w-[300px] px-[40px] py-[20px] mx-auto">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, impedit?
+  </div>
+
+  <!-- 블록 요소가 아니기 때문에 중앙으로 안 감 -->
+  <button class="border-2 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, hic.</button>
+  
+</body>
+</html>
