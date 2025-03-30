@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      img {
+        width: 300px;
+        margin: 20px;
+        /* display: block; */
+        /* TailwindCSS는 기본적으로 img에 block으로 설정해둠 */
+      }
+    </style>
+  </head>
+  <body class="m-10">
+    
+    <!-- 인라인 블록 : 상하 마진 가질 수 있음, 크기 가질 수 있음 -->
+    <!-- 원래는 한줄에 배치되는 Inline 성질을 가짐 (현재는 tailwindcss가 적용되어서 div처럼 한줄에 표시)  -->
+    <img class="inline-block" src="../images/duck.jpg">
+    <img class="inline-block" src="../images/duck.jpg">
+    <img class="inline-block border-2 border-black hidden" src="../images/duck.jpg">
+    <!-- 경고 표시시 이유는 inline-block설정이 display: inline-block 속성이고 -->
+    <!-- hidden 설정은 display: hidden이기에 같은 속성이 두번 들어가서 경고고 -->
+    <img class="inline-block" src="../images/duck.jpg">
+
+  </body>
+</html>

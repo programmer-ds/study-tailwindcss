@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-10">
+
+    <!-- block : 상하 좌우 마진 가능, 너비 가질 수 있음음 -->
+    <div class="border-2 border-black w-[500px] h-[150px] m-[30px]">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      alias praesentium porro voluptate quam vero suscipit modi perspiciatis
+      cumque aperiam? Laborum, veritatis officiis? Repudiandae nobis aliquam
+      dolore beatae expedita autem?
+    </div>
+    
+    <!-- 인라인 : 상하 마진은 가질 수 없음, 너비 가질 수 없음 -->
+    <!-- block으로 변경 가능 -->
+    <span class="border-2 border-black w-[500px] h-[150px] m-[30px] block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, placeat?</span>
+    <span class="border-2 border-black w-[500px] h-[150px] m-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, placeat?</span>
+    <span class="border-2 border-black w-[500px] h-[150px] m-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, placeat?</span>
+
+    <hr class="m-4">
+    
+    <!-- 인라인 블록 : 상하 마진 가질 수 있음, 크기 가질 수 있음 -->
+    <!-- 원래는 한줄에 배치되는 Inline 성질을 가짐 (현재는 tailwindcss가 적용되어서 div처럼 한줄에 표시)  -->
+    <img  src="../images/duck.jpg">
+    <img src="../images/duck.jpg">
+    <img src="../images/duck.jpg">
+
+  </body>
+</html>
