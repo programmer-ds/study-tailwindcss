@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-20">
+    <!-- Transform 5가지 : Scale, Rotate, Skew, Translate, Transform Origin -->
+    <!-- 중요한 내용! -->
+    
+    <img class="translate-x-[300px]" src="../images/duck.jpg">
+    <img class="translate-x-[-20px]" src="../images/duck.jpg">
+    <img class="translate-x-[300px] translate-y-[50px]" src="../images/duck.jpg">
+
+    <hr class="m-20">
+    <div class="border-[4px] border-black size-[500px] relative">
+      <div class="bg-pink-500 size-[150px] absolute left-0 top-0"></div>
+      <div class="bg-pink-500 size-[150px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"></div>
+    </div>
+
+  </body>
+</html>
